@@ -23,7 +23,7 @@ body {
 }
 
 .cover-image img {
-  width: 100%;
+  width: 90%;
   height: auto;
 }
 
@@ -41,7 +41,7 @@ main {
 .cover-image {
   grid-area: cover-image;
   padding: 25px;
-  width: 80%;
+  width: 100%;
   margin: auto;
 }
 
@@ -126,4 +126,16 @@ h2, p {
     white-space: nowrap; 
     width: 1px;
   }
+}
+
+@media screen and (max-width: 1024px) {
+  main {
+  grid-template-columns: 1fr;
+  grid-auto-rows: auto;
+  grid-template-areas: "cover-image"
+  "home"
+  "ueber-schmatzi"
+  "arschpopo"
+  "kontakt";
+}
 }
